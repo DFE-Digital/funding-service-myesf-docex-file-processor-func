@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Pds.DocumentExchange.FileProcessor.Func": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "containerRunArguments": "--init",
+      "httpPort": 33543,
+      "useSSL": false
+    }
+  }
+}

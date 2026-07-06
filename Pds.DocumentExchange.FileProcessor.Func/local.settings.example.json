@@ -1,0 +1,15 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "ServiceBusConnection": "",
+    "DocumentExchangeFileProcessorServicesConfiguration:ApiBaseAddress": "",
+    "DocumentExchangeFileProcessorServicesConfiguration:AppUri": "",
+    "DocumentExchangeFileProcessorServicesConfiguration:Authority": "https://login.microsoftonline.com/",
+    "DocumentExchangeFileProcessorServicesConfiguration:ClientId": "",
+    "DocumentExchangeFileProcessorServicesConfiguration:ClientSecret": "",
+    "DocumentExchangeFileProcessorServicesConfiguration:TenantId": "",
+    "PdsApplicationInsights:InstrumentationKey": "",
+    "PdsApplicationInsights:Environment": "local"
+  }
+}

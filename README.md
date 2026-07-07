@@ -26,6 +26,7 @@ In order to run the application locally a valid `local.settings.json` file will 
   "IsEncrypted": false,
   "Values": {
     "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AzureWebJobsDashboard": "UseDevelopmentStorage=true",
     "ServiceBusConnection": "",
     "DocumentExchangeFileProcessorServicesConfiguration:ApiBaseAddress": "",
     "DocumentExchangeFileProcessorServicesConfiguration:AppUri": "",
@@ -33,6 +34,8 @@ In order to run the application locally a valid `local.settings.json` file will 
     "DocumentExchangeFileProcessorServicesConfiguration:ClientId": "",
     "DocumentExchangeFileProcessorServicesConfiguration:ClientSecret": "",
     "DocumentExchangeFileProcessorServicesConfiguration:TenantId": "",
+    "FUNCTIONS_EXTENSION_VERSION": "~4",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
     "PdsApplicationInsights:InstrumentationKey": "",
     "PdsApplicationInsights:Environment": "local"
   }
@@ -43,6 +46,9 @@ In order to run the application locally a valid `local.settings.json` file will 
 
 - **`AzureWebJobsStorage`**
   The core application setting used by the Azure Functions and Azure WebJobs runtime to establish a connection to an Azure Storage account.
+
+- **`AzureWebJobsDashboard`**
+  The core application setting used by the Azure Functions and Azure WebJobs runtime to establish a connection to an Azure Jobs dashboard.
 
 - **`ServiceBusConnection`**
   The standard application setting used by Azure Functions and Azure WebJobs to securely connect to an Azure Service Bus.
@@ -64,6 +70,12 @@ In order to run the application locally a valid `local.settings.json` file will 
 
 - **`DocumentExchangeFileProcessorServicesConfiguration:TenantId`**  
   The unique identifier for your azure ad tenant.
+
+- **`FUNCTIONS_EXTENSION_VERSION`**  
+  The functions extension version number.
+
+- **`FUNCTIONS_WORKER_RUNTIME`**  
+  The functions runtime mode.
 
 - **`PdsApplicationInsights:InstrumentationKey`**  
   The key value for Application Insights resource for logging purposes.

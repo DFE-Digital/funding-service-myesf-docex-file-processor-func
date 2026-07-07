@@ -33,7 +33,7 @@ namespace Pds.DocumentExchange.FileProcessor.Func
         /// <returns>Async Task.</returns>
         [Function("ReadyForEmailServiceBusFunction")]
         public async Task Run(
-            [ServiceBusTrigger("ReadyForEmail", Connection = "ServiceBusConnection")]ScannedBatchQueueMessage message)
+            [ServiceBusTrigger("ReadyForEmail", Connection = "ServiceBusConnection")] ScannedBatchQueueMessage message)
         {
             _logger?.LogInformation($"{Name} Started");
 

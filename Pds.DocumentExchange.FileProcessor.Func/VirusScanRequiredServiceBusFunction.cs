@@ -35,7 +35,7 @@ namespace Pds.DocumentExchange.FileProcessor.Func
         /// <returns>Async Task.</returns>
         [Function("VirusScanRequiredServiceBusFunction")]
         public async Task Run(
-            [ServiceBusTrigger("VirusScanRequired", Connection = "ServiceBusConnection")]VirusScanRequestMessage message)
+            [ServiceBusTrigger("VirusScanRequired", Connection = "ServiceBusConnection")] VirusScanRequestMessage message)
         {
             _logger?.LogInformation($"{Name} Started");
 
